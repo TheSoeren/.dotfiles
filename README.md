@@ -5,7 +5,7 @@ all you need to do is to clone the repository on your new machine telling
 git that it is a bare repository:
 
 ```
-git clone --separate-git-dir=$HOME/.dotfiles https://github.com/anandpiyer/.dotfiles.git ~
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/TheSoeren/.dotfiles.git ~
 ```
 
 
@@ -15,7 +15,7 @@ a simple solution is to clone to a temporary directory, and then delete
 it once you are done:
 
 ```
-git clone --separate-git-dir=$HOME/.dotfiles https://github.com/anandpiyer/.dotfiles.git tmpdotfiles
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/TheSoeren/.dotfiles.git tmpdotfiles
 rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
 ```
